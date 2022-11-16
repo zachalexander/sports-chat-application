@@ -1,0 +1,7 @@
+{
+  "name": "baltimore-armchair-experts",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
