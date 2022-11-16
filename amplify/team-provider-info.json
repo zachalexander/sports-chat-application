@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-bmorearmchairexperts-dev-105804-authRole",
+      "UnauthRoleArn": "arn:aws:iam::953354210097:role/amplify-bmorearmchairexperts-dev-105804-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::953354210097:role/amplify-bmorearmchairexperts-dev-105804-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-bmorearmchairexperts-dev-105804-deployment",
+      "UnauthRoleName": "amplify-bmorearmchairexperts-dev-105804-unauthRole",
+      "StackName": "amplify-bmorearmchairexperts-dev-105804",
+      "StackId": "arn:aws:cloudformation:us-east-1:953354210097:stack/amplify-bmorearmchairexperts-dev-105804/750bac70-65c7-11ed-8a7b-12667b5cc6b9",
+      "AmplifyAppId": "d1upj9n5bhyrga"
+    }
+  }
+}

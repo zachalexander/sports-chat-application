@@ -1,1 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    font-family: 'Sono', 'Roboto', sans-serif;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
 
+  ion-item {
+    display: flex;
+    align-items: center;
+  }
+
+  ion-textarea {
+    margin-left: 1em !important;
+    margin-top: 2em !important;
+    margin-bottom: 1em !important;
+  }
+
+  .inputPanel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height: 680px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.0);
+  }
+  
+  // .messages {
+  //   flex: 1;
+  //   position: relative;
+  // }
+  
+  .messages-scroller {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    overflow: hidden;
+    margin: 0 auto;
+    min-height: 100%;
+  }
+  
+  .message {
+    align-self: flex-start;
+    margin-top: 4px;
+    padding: 8px 12px;
+    max-width: 240px;
+    background: #f1f0f0;
+    border-radius: 16px;
+    font-size: 14px;
+  }
+  
+  .message.me {
+    align-self: flex-end;
+    background: #2196F3;
+    color: white;
+    width: fit-content;
+  //   margin: 10px;
+  }
+
+  
+  /* width */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  

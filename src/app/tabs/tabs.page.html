@@ -1,20 +1,36 @@
-<ion-tabs>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Chat</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="tab1">
-      <ion-icon name="triangle"></ion-icon>
-      <ion-label>Tab 1</ion-label>
-    </ion-tab-button>
+<ion-content [scrollEvents]="true" class="ion-padding">
 
-    <ion-tab-button tab="tab2">
-      <ion-icon name="ellipse"></ion-icon>
-      <ion-label>Tab 2</ion-label>
-    </ion-tab-button>
+  <div id="messageScroller" class="messages-scroller">
+    <ng-container *ngFor="let message of messages">
+      <div [ngClass]="message.author === username ? 'message me' : 'message'">
+        {{message.body}}
+      </div>
+    </ng-container>
+  </div>
 
-    <ion-tab-button tab="tab3">
-      <ion-icon name="square"></ion-icon>
-      <ion-label>Tab 3</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
 
-</ion-tabs>
+
+</ion-content>
+
+<ion-footer>
+  <ion-item lines="none">
+    <ion-avatar>
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <div class="inputPanel">
+      <ion-textarea #messageBody type="text" placeholder="Message..." [autoGrow]="false" (keyup.enter)="send($event, messageBody)">
+      </ion-textarea>
+      <ion-button (click)="send($event, messageBody)"><ion-icon name="send-outline"></ion-icon></ion-button>
+    </div>
+  </ion-item>
+</ion-footer>
+
+
+
+
